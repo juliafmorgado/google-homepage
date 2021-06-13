@@ -1,8 +1,14 @@
+body{
+    height: 100%;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+     display: flex;
+      justify-content: flex-end;
+      align-items: center;
    
   }
   li {
@@ -20,12 +26,37 @@ ul {
       text-decoration: underline;
   }
 
-  .header{
-      display: flex;
+  nav.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.container{
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle 
+}
+div.sub-container{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+input {
+        font: 16px system-ui;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 20em;
+    height: 100%;
+    width: 100%;
+    padding: 10px 80px;
+    background-color: rgb(255, 255, 255);
+    background-image: url('https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch');
+    transform: translate(-25%, -1%)
   }
-  
   .footer{
-      display: flex;
+      display: grid;
   }
   #sign-in {
       background-color: blue;
@@ -38,33 +69,24 @@ button{
     background-color: #fff;
     border-width: 0;
     color: rgb(87, 86, 86);
+    padding: 10px 5px;
+    font-size: 12px;
 }
 button:hover{
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 5px;
-    padding: 3 6 3 6;
+    padding: 3 6;
 }
-  form {
-    width: 300px;
-    height: 44px;
-    border-color: #a3a1a1;
-    border-width: 10px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  input {
-    all: unset;
-    font: 16px system-ui;
-    color: #fff;
-    height: 100%;
-    width: 100%;
-    padding: 6px 10px;
-  }
+
+
  .footer {
     display: block; 
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: grey;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
  }

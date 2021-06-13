@@ -7,46 +7,36 @@
       <meta charset="UTF-8">
       <meta content="origin" name="referrer">
       <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image">
-<style>
-    .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: grey;
-  background-color: #f2f2f2;
-}
-</style>
+
 </head>
 <body>
     <section>
     <header>
-        <div class="header">
-        <ul>
-            <li><a href="gmail.com">About</a></li>
-            <li><a href="googlestore.com">Store</a></li>
-            <li><a  href="gmail.com">Gmail</a></li>
-            <li><a href="googleimages.com">Images</a></li>
-          </ul> 
-        <span class="material-icons" id="apps">
-            apps
-            </span>
-            <button type="button" id="sign-in">Sign in</button> 
-        </div>
+        <nav class="header">
+            <a href="gmail.com">About</a>
+            <a href="googlestore.com">Store</a>
+            <ul>
+            <li class="item1"><a  href="gmail.com">Gmail</a></li>
+            <li class="item2"><a href="googleimages.com">Images</a></li>
+            <li class="item3"><span class="material-icons" id="apps">
+                apps
+                </span></li>
+            <li class="item4"><button class="button-header" type="button" id="sign-in">Sign in</button></li>
+            </ul>            
+        </nav>
     </header>
 </section>
-<section>
+<div class="container">
+    <div class="sub-container">
     <a href="google.com">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google_logo"></a>
-       </section>
-       <section>
-           <form id="form">
-               <input type="search" id="query" name="q" aria-label="Search through site content">
-               <span class="material-icons" style="float:left"> search  </span>
-           </form>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google_logo" class="img"></a>
+               <form id="form">
+               <input id="query" name="q" aria-label="Search through site content">
+               </form>
            <button type="button">Google Search</button> 
            <button type="button">I'm Feeling Lucky</button> 
-       </section>
+        </div>
+</div>
        <div class="footer">
         <a href="#advertising" class="left">Advertising</a>
             <a  href="#business" class="left">Business</a>
