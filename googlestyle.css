@@ -24,4 +24,8 @@ ul {
     width: 100%;
     padding: 6px 10px;
   }
-  .material-icons { font-size: 24px; }
+ .footer {
+    display: block; 
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }

@@ -2,13 +2,21 @@
 <html intemscope="" itemtype="http:schema.org/WebPage" lang="en">
 <head>
     <link href="googlestyle.css" rel="stylesheet">
-    <link href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch" rel="stylesheet">
-    <link href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aapps" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
       <meta charset="UTF-8">
       <meta content="origin" name="referrer">
       <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image">
-
+<style>
+    .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: grey;
+  background-color: #f2f2f2;
+}
+</style>
 </head>
 <body>
     <section>
@@ -19,7 +27,7 @@
             <li><a style="float:right" href="gmail.com">Gmail</a></li>
             <li><a style="float:right" href="googleimages.com">Images</a></li>
           </ul> 
-        <span class="material-icons-outlined">
+        <span class="material-icons">
             apps
             </span>
             <button type="button">Sign in</button> 
@@ -32,8 +40,19 @@
        <section>
            <form id="form">
                <input type="search" id="query" name="q" aria-label="Search through site content">
-               <span class="material-icons-outlined"> search  </span>
+               <span class="material-icons"> search  </span>
            </form>
+           <button type="button">Google Search</button> 
+           <button type="button">I'm Feeling Lucky</button> 
        </section>
+       <div class="footer">
+        <a href="#advertising" class="left">Advertising</a>
+            <a href="#business" class="left">Business</a>
+        <a href="#work-search-works" class="left">How Search Works</a>
+            <a href="#carbon-neutral" class="center">Carbon neutral since 2007</a>
+                <a href="#privacy" class="right">Privacy</a>
+                    <a href="#terms" class="right">Terms</a>
+                        <a href="#settings" class="right">Settings</a>
+       </div>
 </body>
 </html>
