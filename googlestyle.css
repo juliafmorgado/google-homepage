@@ -7,10 +7,48 @@ ul {
   }
   li {
     display: inline;
+    color: #222;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 5px;
+    padding: 5px;
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+    text-decoration-line: none;
   }
+  a:hover, a:active{
+      text-decoration: underline;
+  }
+
+  .header{
+      display: flex;
+  }
+  
+  .footer{
+      display: flex;
+  }
+  #sign-in {
+      background-color: blue;
+      color: #fff;
+      padding: 2px 8px 2px 8px;
+      border-width: 0px;
+      border-radius: 5px;
+  }
+button{
+    background-color: #fff;
+    border-width: 0;
+    color: rgb(87, 86, 86);
+}
+button:hover{
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 3 6 3 6;
+}
   form {
     width: 300px;
     height: 44px;
+    border-color: #a3a1a1;
+    border-width: 10px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -26,6 +64,7 @@ ul {
   }
  .footer {
     display: block; 
-    font-size: 12px;
+    font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
  }
