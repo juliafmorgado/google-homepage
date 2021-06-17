@@ -3,26 +3,28 @@ body{
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
      display: flex;
       justify-content: flex-end;
       align-items: center;
    
   }
-  li {
-    -moz-appearance: none;
+   li {
+    
     display: inline;
-    color: #222 !important;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif !important;
-    margin: 0 5px;
+    margin: 0px 5px;
     padding: 5px;
-    text-decoration: rgb(34, 34, 34);
-    text-decoration-color: rgb(34, 34, 34);
-    text-decoration-line: none;
-  }
+      }
+     
+      a:link {
+        text-decoration: none;
+        color: #222;
+     }
+     a:hover { text-decoration: underline}
  .item1{
      margin-right:auto;
  }
@@ -41,7 +43,7 @@ div.container{
     vertical-align: middle 
 }
 div.sub-container{
-    margin: 0;
+    margin: 0px;
     position: absolute;
     top: 40%;
     left: 55%;
@@ -59,17 +61,58 @@ input {
     background-image: url('https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch');
     transform: translate(-25%, -1%)
   }
-
-  #sign-in {
-      background-color: rgb(0, 102, 255);
+.button-form{
+    background-color: #f8f9fa;
+border: 1px solid #f8f9fa;
+border-radius: 4px;
+color: #3c4043;
+font-family: arial,sans-serif;
+font-size: 14px;
+margin: 11px 4px;
+padding: 0 16px;
+line-height: 27px;
+height: 36px;
+min-width: 54px;
+text-align: center;
+cursor: pointer;
+user-select: none;
+}
+.button-form:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+background-color: #f8f9fa;
+border: 1px solid #dadce0;
+color: #202124;
+}
+  .button-header {
+      background-color: #2b7de9;
       color: #fff;
       padding: 2px 8px 2px 8px;
       border-width: 0px;
       border-radius: 5px;
+      font-weight: 500;
+font-size: 14px;
+letter-spacing: .25px;
+line-height: 16px;
+margin-right: 8px;
+min-width: 96px;
+padding: 9px 23px;
+text-align: center;
+vertical-align: middle;
+border: 1px solid transparent;
+  }
+  .button-header:hover{
+    box-shadow:  1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+    background: #3281e7;
+    line-height: 16px;
+margin-right: 8px;
+min-width: 96px;
+padding: 9px 23px;
+text-align: center;
+vertical-align: middle;
   }
 button{
     background-color: #fff ;
-    border-width: 0 ;
+    border-width: 0px ;
     color: rgb(87, 86, 86);
     padding: 10px 5px;
     font-size: 12px;
@@ -77,32 +120,32 @@ button{
 button:hover{
     border-width: 1px;
     border-radius: 5px;
-    padding: 3 6;
+    padding: 3px 6px;
 }
 
 
  .footer {
-    -moz-appearance: none;
     display: block; 
-    font-size: 14px !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-    color: grey !important;
     position: fixed;
-    left: 0;
-    bottom: 0;
+    left: 0px;
+    bottom: 0px;
     width: 100%;
-    background-color: #e2e1e1;
-    padding: 20px 10px 20px 10px;
- 
-    
+    background-color: #eeeeee;
+    padding: 10px 1px;
  }
- .center{
-    margin: 0;
+
+ .footer a:link{
+     color: rgb(145, 145, 145);
+     font-size: 14px !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+ }
+.footer .center{
+    margin: 0px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
  }
- .right{
+.footer .right{
     float: right;
  }
