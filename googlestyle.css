@@ -50,21 +50,9 @@ div.sub-container{
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-input {
-        font: 16px system-ui;
-    border: 1px solid rgb(182, 182, 182);
-    border-radius: 20em;
-    height: 100%;
-    width: 100%;
-    padding: 10px 80px;
-    background-color: rgb(255, 255, 255);
-    background-image: url('https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch');
-    transform: translate(-25%, -1%)
-  }
+
 .button-form{
-    background-color: #f8f9fa;
-border: 1px solid #f8f9fa;
-border-radius: 4px;
+background-color: #f8f9fa;
 color: #3c4043;
 font-family: arial,sans-serif;
 font-size: 14px;
@@ -78,10 +66,35 @@ cursor: pointer;
 user-select: none;
 }
 .button-form:hover{
-    box-shadow: 0 1px 1px rgba(0,0,0,.1);
 background-color: #f8f9fa;
 border: 1px solid #dadce0;
 color: #202124;
+}
+
+.flex-container{
+    display: flex; 
+    justify-content: flex-start;
+    font: 16px system-ui;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 20em;
+    height: 100%;
+    width: 100%;
+    padding: 10px 80px;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-25%, -1%)
+ }
+
+span#search.material-icons{
+    color: #9aa0a6;
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-left: -60px;
+    margin-top: -5px;
+}
+#query{
+    border-width: 0px;
+    width:inherit;
 }
   .button-header {
       background-color: #2b7de9;
@@ -119,8 +132,8 @@ button{
 }
 button:hover{
     border-width: 1px;
-    border-radius: 5px;
-    padding: 3px 6px;
+    border-radius: 4px;
+    
 }
 
 
